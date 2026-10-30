@@ -35,16 +35,26 @@ class Lap1_2Activity : AppCompatActivity() {
             Toast.makeText(this, "Mở tính năng Tìm kiếm", Toast.LENGTH_SHORT).show()
         }
 
+        // KẾT NỐI LAB 3: Truyền ID tương ứng sang Lap3Activity
         btnDetail1?.setOnClickListener {
-            Toast.makeText(this, "Xem chi tiết: Nguyễn Văn An", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Lap3Activity::class.java).apply {
+                putExtra(Lap3Activity.EXTRA_STUDENT_ID, "1") // ID của Nguyễn Văn An
+            }
+            startActivity(intent)
         }
 
         btnDetail2?.setOnClickListener {
-            Toast.makeText(this, "Xem chi tiết: Trần Thị Bích", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Lap3Activity::class.java).apply {
+                putExtra(Lap3Activity.EXTRA_STUDENT_ID, "2") // ID của Trần Thị Bích
+            }
+            startActivity(intent)
         }
 
         btnDetail3?.setOnClickListener {
-            Toast.makeText(this, "Xem chi tiết: Lê Hoàng Minh", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, Lap3Activity::class.java).apply {
+                putExtra(Lap3Activity.EXTRA_STUDENT_ID, "3") // ID của Lê Hoàng Minh
+            }
+            startActivity(intent)
         }
 
         // Nút thêm sinh viên mới (+) -> Mở màn hình Đăng ký

@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
 
-        <!-- 1. Màn hình Đăng ký tài khoản (Bây giờ là màn hình khởi chạy đầu tiên) -->
+        <!-- 1. Màn hình Đăng ký tài khoản (Khởi chạy đầu tiên) -->
         <activity
             android:name=".Lap1_1Activity"
             android:exported="true">
@@ -19,9 +19,14 @@
             </intent-filter>
         </activity>
 
-        <!-- 2. Màn hình Danh sách sinh viên (Mở sau khi đăng ký thành công) -->
+        <!-- 2. Màn hình Danh sách sinh viên -->
         <activity
             android:name=".Lap1_2Activity"
+            android:exported="false" />
+
+        <!-- 3. Màn hình Chi tiết sinh viên (Lab 3) -->
+        <activity
+            android:name=".Lap3Activity"
             android:exported="false" />
 
     </application>
